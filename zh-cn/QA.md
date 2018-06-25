@@ -1,3 +1,9 @@
+## Q：errCode -> 1002 msg -> 文件不匹配/xxxxx/xx/xx/xx/xx.js 同时toast报当前md5与config中的md5不一致问题
+
+A：
+  先检查native.json和bundle中的md5.json看是否一直(这一步其实已经出错了，命名不规范xx.js的开头没注意，所以这个坑没看清)，然后eros-android-jony大佬亲自teamview操刀检查，远程帮我看，看了很多次，因为每次只能连5分钟，打开源码调式，最后发现了这个问题，由衷感谢eros-android-jony！
+
+
 ## Q: 热刷新不起作用
 
 A:
